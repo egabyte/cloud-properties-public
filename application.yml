@@ -1,0 +1,35 @@
+#Genel tanımlamalar burada yapılır
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 2
+    lease-expiration-duration-in-seconds: 6
+    metadata-map:
+      instance-id: ${spring.application.name}:{$spring.application.instance_id:{server.port}}
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
+management:
+  context-path: /admin
+  security:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
+  user:
+    name: icoders
+    password: 123456
+
+feign:
+  hystrix:
+    enabled: false
+
+#spring:
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: admin
+#    password: admin
