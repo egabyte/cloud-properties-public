@@ -10,3 +10,7 @@ encrypt:
     password: 12345678
     secret: mykeypass
     alias: defaultkey
+    
+test:
+  name: Ahmet
+  surname: Cokgungordu
