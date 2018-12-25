@@ -12,5 +12,5 @@ encrypt:
     alias: defaultkey
     
 test:
-  name: Ahmet
-  surname: Cokgungordu
+  name: John
+  surname: Egabyte
